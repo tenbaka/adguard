@@ -1,0 +1,47 @@
+! Title: なんJ改修DNSフィルター
+! Version: 2020-11-28
+! Homepage: https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%94%B9%E4%BF%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC
+! License: CC0 (http://creativecommons.org/publicdomain/zero/1.0/)
+! Description: 280blocker domain filter(AdGuard_format)購読時における不具合を改修するためにDNSユーザーフィルタで購読するフィルタ。
+!
+!【ウェブサイトが表示されない】
+!
+!●フレッシュアイが表示されない不具合への対応
+!https://wikiwiki.jp/nanj-adguard/%E4%B8%8D%E5%85%B7%E5%90%88%E6%83%85%E5%A0%B1#tab40826
+@@||fresheye.com^
+!
+!【ウェブサイトの表示がおかしい】
+!
+!●KONAMIでの不具合への対応
+!https://wikiwiki.jp/nanj-adguard/%E4%B8%8D%E5%85%B7%E5%90%88%E6%83%85%E5%A0%B1#t2453d27
+@@||coremetrics.com^
+!
+!●Pontaでの不具合への対応
+!https://wikiwiki.jp/nanj-adguard/%E4%B8%8D%E5%85%B7%E5%90%88%E6%83%85%E5%A0%B1#w96f42c5
+@@||mtburn.com^
+!
+!【広告ブロック解除を要求する警告が出る】
+!
+!【アプリの動作がおかしい】
+!
+!●LINE(jp.naver.line.android)での不具合への対応
+!https://wikiwiki.jp/nanj-adguard/%E4%B8%8D%E5%85%B7%E5%90%88%E6%83%85%E5%A0%B1#lc6992b3
+@@||applovin.com^
+!
+!●FOD(air.jp.co.fujitv.fodviewer)での不具合への対応
+!https://wikiwiki.jp/nanj-adguard/%E4%B8%8D%E5%85%B7%E5%90%88%E6%83%85%E5%A0%B1#a23f5dc9
+@@||web-jp.ad-v.jp^
+!
+!【不具合内容が不明】
+!
+!【その他】
+!
+!【不具合・デメリットを含むルール】
+!◆以下のルールの「!」を外してDNSユーザーフィルタに追加してください。
+!
+!●LINE(jp.naver.line.android)のLINE Out Freeで通話可能にするためのルール
+!★これを使用するとGoogle開発者サービス経由の広告を防ぐことができません。
+!@@||doubleclick.net^
+!@@||google-analytics.com^
+!@@||gstatic.com^
+
